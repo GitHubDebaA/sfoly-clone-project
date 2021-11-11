@@ -1,0 +1,51 @@
+#flex {
+    border: 3px solid #00C496;
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+#flex::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    float: right;
+}
+
+.mat-display-1 {
+    margin: auto;
+}
+
+.text-area {
+    padding-top: 50px;
+    padding-left: 2%;
+}
+
+.hr-div {
+    padding-top: 35px;
+}
+.hr-line {
+    position: absolute;
+    width: 450px;
+}
+
+.register-schedule-div {
+    padding-top: 55px;
+    padding-left: 2%;
+}
+
+.register-schedule-btn {
+    padding: 8px 70px;
+    border: 1px solid #00C496;
+    font-size: 18px;
+}
+
+.register-schedule-btn:hover {
+    background-color: #00C496;
+    color: white;
+}

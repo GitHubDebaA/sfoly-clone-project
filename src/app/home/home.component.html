@@ -1,0 +1,206 @@
+<div id="heading">
+    <mat-card class="card">
+        <mat-toolbar>
+            <img class="logo" src="../../assets/logo.jpg">
+            <span class="name">Springfield Olympiads</span>
+            <span class="spacer"></span>
+            <button mat-raised-button>Login</button>
+        </mat-toolbar>
+    </mat-card>
+</div>
+<p></p>
+<div>
+    <mat-toolbar class="nav-bar">
+        <button mat-button>Register</button>
+        <button mat-button [matMenuTriggerFor]="menu">Olympiads<mat-icon>arrow_drop_down</mat-icon> </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>SISO</button>
+            <button mat-menu-item>SIMO </button>
+            <button mat-menu-item>SIEO</button>
+            <button mat-menu-item>SICO</button>
+            <button mat-menu-item>GRAD</button>
+            <button mat-menu-item>Finance</button>
+        </mat-menu>
+        <button mat-button>About Us</button>
+        <button mat-button>FAQ's</button>
+        <button mat-button>Contact Us</button>
+    </mat-toolbar>
+</div>
+
+<div id="flex">
+    <img class="flex-image" src="{{currentImage}}">
+
+    <div class="text-area">
+        <div class="mat-display-1">Feeling Prepared?</div>
+        <div class="mat-display-1" [style.color]="currentColor">Register For {{currentSubject}}</div>
+        <div class="hr-div">
+            <hr class="hr-line">
+        </div>
+
+        <div class="register-schedule-div">
+            <button class="register-schedule-btn" mat-raised-button>Register</button>
+
+            <button class="register-schedule-btn" mat-raised-button>Schedule</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="control-banner">
+    <button id="left-nav" mat-mini-fab color="basic" aria-label="Example icon button with a menu icon" onclick="changeBanner()">
+        <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <mat-icon class="banner-position">radio_button_checked</mat-icon>
+    <mat-icon class="banner-position">radio_button_unchecked</mat-icon>
+    <mat-icon class="banner-position">radio_button_unchecked</mat-icon>
+    <mat-icon class="banner-position">radio_button_unchecked</mat-icon>
+    <mat-icon class="banner-position">radio_button_unchecked</mat-icon>
+
+    <button id="right-nav" mat-mini-fab color="basic" aria-label="Example icon button with a menu icon">
+        <mat-icon>chevron_right</mat-icon>
+    </button>
+</div>
+
+<!-- register section -->
+<div>
+    <mat-card class="register">
+        <div class="mat-headline">Register</div>
+        <div class="register-institute">
+            <div class="mat-title">Register as an Institute</div><br>
+            <div class="mat-body-2">{{regIns}}</div>
+
+            <div class="highlight">
+                <div class="highlight-text">
+                    <div class="mat-subheading-2">2000+ Registered Institute</div>
+                    <div class="mat-subheading-2">50000+ Registered Individuals</div>
+                </div>
+                <button class="register-button" mat-raised-button>
+                    Register Now
+                    <mat-icon>chevron_right</mat-icon>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="register-institute">
+            <div class="mat-title">Register as a Coordinator</div><br>
+            <div class="mat-body-2">{{regCo}}</div>
+
+            <div class="highlight">
+                <div class="highlight-text">
+                    <div class="mat-subheading-2">150+ Registered Coordinators</div>
+                </div>
+                <button class="register-button" mat-raised-button>
+                    Register Now
+                    <mat-icon>chevron_right</mat-icon>
+                </button>
+            </div>
+
+        </div>
+     </mat-card>
+</div>
+
+<!-- about section -->
+<div>
+    <mat-card class="register">
+        <div class="mat-headline">About</div>
+        <div class="register-institute">
+            <div class="mat-title">About Springfield Olympiads</div><br>
+            <div class="mat-body-2">{{about}}</div>
+
+            <div class="highlight">
+                <div class="highlight-img">
+                    <img src="../../assets/logo.jpg" alt="">
+                </div>
+                <button class="about-button" mat-raised-button>
+                    Know More
+                    <mat-icon>chevron_right</mat-icon>
+                </button>
+            </div>
+        </div>
+    </mat-card>
+</div>
+
+<!-- reviews section -->
+
+<div>
+    <mat-card class="register">
+        <div class="mat-headline">Reviews</div>
+        <div class="register-institute">
+            <div class="mat-title"><mat-icon>campaign</mat-icon> Yasharth Kumar Srivastava<span class="mat-body-2">(Student)</span></div>
+            <div class="mat-body-1"> <mat-icon>subdirectory_arrow_right</mat-icon> You're organising such things that's are very interesting and the same thing I liked most.</div>
+        </div>
+
+        <div class="register-institute">
+            <div class="mat-title"><mat-icon>campaign</mat-icon>Nidhi Gupta<span class="mat-body-2">(Student)</span></div>
+            <div class="mat-body-1"> <mat-icon>subdirectory_arrow_right</mat-icon> Result graduation process was quick.</div>
+        </div>
+        
+        <div class="register-institute">
+            <div class="mat-title"><mat-icon>campaign</mat-icon> Priyesh Gandhi<span class="mat-body-2">(Student)</span></div>
+            <div class="mat-body-1"> <mat-icon>subdirectory_arrow_right</mat-icon> It was gold place to learn.</div>
+        </div>
+
+        <div class="register-institute">
+            <div class="mat-title"><mat-icon>campaign</mat-icon> Abhishek S Nair<span class="mat-body-2">(Student)</span></div>
+            <div class="mat-body-1"> <mat-icon>subdirectory_arrow_right</mat-icon> Best set of questions with a low amont of money.</div>
+        </div>
+
+        <button class="view-review-button" mat-raised-button>View all reviews!</button>
+    </mat-card>
+</div>
+
+
+<!-- follow us & contact us -->
+<div id="follow-contact-us-div">
+    <mat-grid-list cols="20" rowHeight="50px" id="follow-us">  
+        <mat-grid-tile
+            *ngFor="let tile of followtiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [ngStyle]="tile.style">
+            {{tile.text}}
+        </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="20" rowHeight="50px" id="follow-us">  
+        <mat-grid-tile
+            *ngFor="let tile of contacttiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [ngStyle]="tile.style">
+            {{tile.text}}
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<!-- copyrights -->
+<div>
+    <hr>
+    <mat-card>
+        <mat-grid-list cols="10" rowHeight="25px" id="follow-us">  
+            <mat-grid-tile
+                *ngFor="let tile of copyrightTiles"
+                [colspan]="tile.cols"
+                [rowspan]="tile.rows"
+                [ngStyle]="tile.style">
+                <div class="mat-body-1">{{tile.text}}</div>     
+            </mat-grid-tile>
+        </mat-grid-list>        
+    </mat-card>
+    <hr>
+</div>
+
+<!-- support cards -->
+<div>
+    <mat-grid-list cols="20" rowHeight="25px" id="follow-us">  
+        <mat-grid-tile
+            *ngFor="let tile of copyrightTiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+            [ngStyle]="tile.style">
+            <div class="mat-body-1">{{tile.text}}</div>     
+        </mat-grid-tile>
+    </mat-grid-list>        
+</div>

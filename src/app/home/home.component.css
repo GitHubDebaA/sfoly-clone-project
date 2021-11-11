@@ -1,0 +1,238 @@
+.imageDMCA {
+    background-image: url('../../assets/dmca-badge-w250-2x1-04.png');
+    background-repeat: no-repeat;
+}
+
+.copyrightsText {
+    font-size: 14px;
+}
+
+#follow-us {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#follow-contact-us-div {
+    margin-top: 3vh;
+}
+
+.view-review-button {
+    margin-left: 1vw;
+    margin-top: 2vw;
+
+    font-size: 1rem;
+}
+
+.highlight {
+    float: right;
+}
+
+.highlight-text {
+    position: relative;
+    top: -16vh;
+    color: #00C496;
+}
+
+.highlight-img img{
+    position: relative;
+    width: 9vw;
+    height: 23vh;
+    top: -23vh;
+    left: -20vw;
+}
+
+.mat-subheading-2 {
+    margin: auto;
+}
+
+.mat-headline {
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.register {
+    margin-top: 5vh;
+    margin-left: 10vw;
+    width: 75vw;
+}
+
+.register-institute {
+    background-color: whitesmoke;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+}
+
+.register-button {
+    top: -15vh;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.about-button {
+    top: -30vh;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.mat-title {
+    margin: auto;
+    color: #00C496;
+    font-weight: 500;
+}
+
+.mat-body-2 {
+    margin-left: 1vw;
+    width: 30vw;
+    text-align: justify;
+}
+
+.mat-body-1 {
+    margin-left: 3vw;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.control-banner {
+    margin-top: 5vh;
+    margin-left: 40vw;
+}
+
+#left-nav {
+    top: -33.5vh;
+    left:  calc(-40vw + 3.5vw);
+    float: left;
+
+}
+
+#right-nav {
+    top: -33.5vh;
+    right: 3vw;
+    float: right;
+}
+
+.banner-position {
+    font-weight: 600;
+    font-size: 1rem;
+    color: gray;
+}
+
+.mat-raised-button {
+    border: 1px solid #00C496;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.mat-raised-button:hover {
+    background-color: #00C496;
+    color: white;
+    border: 1px solid white;
+}
+
+.mat-button {
+    padding: 1vh 2vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.mat-button:hover {
+    background-color: #00C496;
+    color: white;
+}
+
+.mat-menu-item {
+    padding: 1vh 2vw;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.mat-menu-item:hover {
+    background-color: #00C496;
+    color: white;
+}
+
+.nav-bar {
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.logo {
+    height: 9vh;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.card {
+    padding: 0px !important;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.name {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+#flex {
+    border: 3px solid #00C496;
+    width: 90%;
+    height: 50vh;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+#flex::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flex-image {
+    float: right;
+    width: 45vw;
+    height: 50vh;
+    border: 3px solid none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.mat-display-1 {
+    margin: auto;
+    font-weight: 500;
+}
+
+.text-area {
+    padding-top: 7vh;
+    padding-left: 2%;
+}
+
+.hr-div {
+    padding-top: 5vh;
+}
+
+.hr-line {
+    position: absolute;
+    width: 33vw;
+}
+
+.register-schedule-div {
+    padding-top: 9vh;
+    padding-left: 2%;
+}
+
+.register-schedule-btn {
+    padding: 0.5vw 10vh;
+    border: 1px solid #00C496;
+    font-size: 1.2rem;
+}
+
+.register-schedule-btn:hover {
+    background-color: #00C496;
+    color: white;
+    border: 1px solid white;
+}
